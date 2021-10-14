@@ -3,10 +3,11 @@
 #include "mbed.h"
 
 #define V_REFINT 1.212
-AnalogIn adc_vref(ADC_VREF);
-AnalogIn adc_vbat(ADC_VBAT);
 
 class Battery {
+    private:
+        AnalogIn adc_vref;
+        AnalogIn adc_vbat;
     public:
         Battery();
         float voltage();

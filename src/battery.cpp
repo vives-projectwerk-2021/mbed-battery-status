@@ -1,10 +1,14 @@
 #include "battery.h"
 
-Battery::Battery() {
+Battery::Battery():
+    adc_vref(ADC_VREF),
+    adc_vbat(ADC_VBAT)
+{
     // constructor
 }
 
-float Battery::voltage() {
+float Battery::voltage()
+{
     // get voltage
     float vref = adc_vref.read();
     float vbat = adc_vbat.read() * 3;
