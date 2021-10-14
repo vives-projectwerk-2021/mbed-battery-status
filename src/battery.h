@@ -10,4 +10,4 @@ class Battery {
     public:
         Battery();
         float voltage();
-}
+};
