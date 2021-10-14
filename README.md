@@ -20,5 +20,5 @@ Als Vref+ berekent is kunnen we de spanning van de batterij berekenen:
 
 ![img3](img/formule2.png)
 
-- **FULL_SCALE**: Max waarde van de ADC (212 - 1 = 4095).
+- **FULL_SCALE**: Max waarde van de ADC (2<sup>12</sup> - 1 = 4095).
 - **ADC_DATA**: ADC waarde van te meten channel (voor ons V<sub>BAT</dub>).
