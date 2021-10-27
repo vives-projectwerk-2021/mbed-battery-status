@@ -17,4 +17,5 @@ class Battery {
     public:
         Battery();
         float voltage();
+        float pin_voltage(PinName);
 };
